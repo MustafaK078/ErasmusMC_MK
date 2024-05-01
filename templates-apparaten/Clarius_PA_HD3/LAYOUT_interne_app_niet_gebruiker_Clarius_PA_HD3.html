@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Tag voor correct responsief gedrag op mobiele apparaten-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <!--Tag voor het koppelen van de Bootstrap library voor het gebruik van de bijbehorende functies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Hyperreference naar styling bestand van deze pagina-->
+    <link href="/templates-apparaten/Clarius_PA_HD3/STYLE_interne_app_niet_gebruiker_Clarius_PA_HD3.css" rel="stylesheet">
+
+    <title>Beoordeling apparaten</title>
+
+    <script>
+         //JavaScript-code om de beoordelingen vast te leggen en weer te geven:
+      $(document).ready(function () {
+          $("#submit").click(function () {
+                  // De variabele score wordt gebruikt om de totale score van alle beoordelingscategorieën bij te houden.
+                  //Bij elke beoordelingscategorie wordt de beoordeling vermenigvuldigd met de bijbehorende weging en opgeteld bij de totale score
+              var totalScore = 0;
+
+               // Door elke relevante panel goup lopen en de ingevoerde data meenemen:
+              var panelGroups = ["panel-group2-1", "panel-group2-2", "panel-group2-3", "panel-group2-4"];
+
+              panelGroups.forEach(function (panelGroupName) {
+
+                // De selector toont een bijdrage bij het vinden van de juiste "panel-group":
+                var selector = "." + panelGroupName;
+
+                      //De variabele score wordt gebruikt om de beoordeling van elke beoordelingscategorie bij te houden.
+                      // Binnen de lus wordt gecontroleerd welke radio-input is aangevinkt voor elke beoordelingscategorie.
+                      // Deze waarde wordt vervolgens opgeslagen in de variabele score.
+                      var score = parseInt($(selector).find("input:checked").val());
+
+                      // Dit stukje code zoekt binnen het huidige <div class="panel-group2-.."> element naar het <p> element en haalt de tekst op.
+                      // Vervolgens wordt een reguliere expressie (/\d+/) gebruikt om het eerste getal in de tekst te vinden.
+                      // Dit getal vertegenwoordigt de weging van de beoordelingscategorie.
+                      // De parseInt() functie wordt gebruikt om dit getal om te zetten naar een integer,
+                      // zodat het vermenigvuldigd kan worden met de beoordeling die de gebruiker heeft gegeven.
+                      var weighting = parseInt($(selector).prev("p").text().match(/\d+/)[0]);
+
+                      // Berekening van de totale score:
+                  totalScore += score * weighting;
+              });
+                 // weergeven totale score
+              $("#result").text("Totale score: " + totalScore);
+          });
+      });
+
+      $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+      });
+  </script>
+</head>
+
+<body style="background-color: #0ebad2;">
+  <div>
+    <h1>Interne apparaat</h1>
+    <h2>Clarius PA HD3 (niet-gebruiker)</h2>
+    <img class="handheld" alt="Foto" src="/static/Clarius_PA_HD3.PNG">
+    <div class="vl"></div>
+    <hr class="h1">
+  </div>
+
+  <div>
+    <img class="EMC-logo" alt="Foto EMC logo" src="/static/EMC1.png">
+  </div>
+
+  <div>
+    <h2 class="a">Samenvatting apparaat:</h2>
+  </div>
+
+  <div class="a"> De Clarius C3 HD3 is een handheld echoapparaat dat hoogwaardige echografische beeldvorming biedt in een draagbare vorm.
+    Het is ontworpen voor veelzijdig gebruik in verschillende klinische settings.
+  </div>
+
+  <div class="v2"></div>
+
+  <div>
+    <h2 class="c">Beoordeling:</h2>
+  </div>
+
+
+  <div>
+    <p id="rcorners" data-toggle="tooltip" data-placement="right" title="Algemene ervaring met het apparaat.">
+      Praktisch (weging: 4)</p>
+    <div class="panel-group2-1">
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1-1" value="1">
+          <label class="form-check-label" for="inlineRadio1-1">1</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1-2" value="2">
+          <label class="form-check-label" for="inlineRadio1-2">2</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1-3" value="3">
+          <label class="form-check-label" for="inlineRadio1-3">3</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1-4" value="4">
+        <label class="form-check-label" for="inlineRadio1-4">4</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1-5" value="5">
+        <label class="form-check-label" for="inlineRadio1-5">5</label>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p id="rcorners">Transporteerbaarheid (weging: 1)</p>
+    <div class="panel-group2-2">
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-1" value="1">
+          <label class="form-check-label" for="inlineRadio2-1">1</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-2" value="2">
+          <label class="form-check-label" for="inlineRadio2-2">2</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-3" value="3">
+          <label class="form-check-label" for="inlineRadio2-3">3</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-4" value="4">
+        <label class="form-check-label" for="inlineRadio2-4">4</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-5" value="5">
+        <label class="form-check-label" for="inlineRadio2-5">5</label>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p id="rcorners">Batterijduur (weging: 3)</p>
+    <div class="panel-group2-3">
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3-1" value="1">
+          <label class="form-check-label" for="inlineRadio3-1">1</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3-2" value="2">
+          <label class="form-check-label" for="inlineRadio3-2">2</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3-3" value="3">
+          <label class="form-check-label" for="inlineRadio3-3">3</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3-4" value="4">
+        <label class="form-check-label" for="inlineRadio3-4">4</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3-5" value="5">
+        <label class="form-check-label" for="inlineRadio3-5">5</label>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p id="rcorners">Starttijd (weging: 3)</p>
+    <div class="panel-group2-4">
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4-1" value="1">
+          <label class="form-check-label" for="inlineRadio4-1">1</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4-2" value="2">
+          <label class="form-check-label" for="inlineRadio4-2">2</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4-3" value="3">
+          <label class="form-check-label" for="inlineRadio4-3">3</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4-4" value="4">
+        <label class="form-check-label" for="inlineRadio4-4">4</label>
+      </div>
+      <div class="form-check form-check-inline" style="display: inline;">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4-5" value="5">
+        <label class="form-check-label" for="inlineRadio4-5">5</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="b">
+    <button id="submit" class="btn btn-primary">Invoeren</button>
+    <span id="result"></span>
+  </div>
+
+  <div>
+    <h2 class="b">Apparaat specificaties:</h2>
+    <div class="panel-group-1" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Technische functionaliteiten (apparaat)</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              7 modes :
+              -	B-modus
+              -	M-modus
+              -	Power-doppler
+              -	Kleurendoppler
+              -	harmonische beeldvorming (THI)
+              -	Gepulseerde golfdoppler
+              -	Elastografie
+
+              Frequentielevel van de probe: 2 – 6 MHz
+
+              Scantijd: 1 uur
+              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Technische functionaliteiten (software)</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Dicom</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                Medische toepassingen</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Convex:
+              -	Buikspier
+              -	Blaas
+              -	Hart
+              -	Heup – MSK
+              -	Heup gewricht
+              -	Arbeid en levering
+              -	Long
+              -	MSK
+              -	Verloskundige/gynaecoloog
+              -	Bekken
+              -	Prostaat
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

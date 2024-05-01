@@ -1,0 +1,271 @@
+/*Vooraf uitgelegde onderdelen*/
+  h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      text-align: Center;
+      color: white;
+  }
+
+  h1.outline {
+    border: 1px solid black;
+    outline: #2F4F4F solid 3px;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+  }
+
+  h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      text-align: center;
+      color: white;
+  }
+
+  h2.handhelds {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+  /* Define the blur effect */
+   .blurred {
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+}
+
+
+  .vraag1{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #daf4fe;
+    width: 310px;
+    height: 55px;
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .vraag2{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #daf4fe;
+    width: 310px;
+    height: 55px;
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .vraag3{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #daf4fe;
+    width: 310px;
+    height: 55px;
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .vraag4{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #daf4fe;
+    width: 310px;
+    height: 55px;
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+    position: absolute;
+    top: 205%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+    img.EMC-logo {
+      position: fixed;
+      bottom: 20px; /* Afstand vanaf de onderkant van het viewport */
+      right: 20px; /* Afstand vanaf de rechterkant van het viewport */
+      width: 275px;
+  }
+
+    img.handhelds_clarius_C3 {
+      position: absolute;
+      top: 375px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+
+    img.handhelds_clarius_PA {
+      position: absolute;
+      top: 640px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+
+    img.handhelds_butterfly {
+      position: absolute;
+      top: 930px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+    img.handhelds_Lumify_C5-2 {
+      position: absolute;
+      top: 1240px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+    }
+
+
+    img.handhelds_Lumify_S4-1 {
+      position: absolute;
+      top: 1550px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+    }
+
+
+    img.handhelds_Lumify_L12-4 {
+      position: absolute;
+      top: 1880px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+    }
+
+    img.handhelds_Vscan {
+      position: absolute;
+      top: 2235px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 275px;
+    }
+
+
+    img.handhelds_Canon {
+      position: absolute;
+      top: 2525px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 325px;
+    }
+
+
+    img.handhelds_Visiq {
+      position: absolute;
+      top: 2800px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+    }
+
+    img.handhelds_Sonoscanner {
+      position: absolute;
+      top: 3270px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 275px;
+    }
+
+    img.handhelds_Chison {
+      position: absolute;
+      top: 3625px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+    }
+
+    img.handhelds_EagleView {
+      position: absolute;
+      top: 3980px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+    }
+
+    img.handhelds_Asus {
+      position: absolute;
+      top: 4300px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+    }
+
+    img.handhelds_YouKey {
+      position: absolute;
+      top: 4605px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+    }
+
+    img.handhelds_Sonosite {
+      position: absolute;
+      top: 4855px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 375px;
+    }
+
+    img.handhelds_EchoNous {
+      position: absolute;
+      top: 5155px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+    }
+
+    img.handhelds_Drsono {
+      position: absolute;
+      top: 5475px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+    img.handhelds_iq3 {
+      position: absolute;
+      top: 5800px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+    }
+
+    img.handhelds_Iris {
+      position: absolute;
+      top: 6152px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 270px;
+    }
+
+

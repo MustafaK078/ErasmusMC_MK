@@ -1,0 +1,55 @@
+/*Vooraf uitgelegde onderdelen*/
+  h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      padding-left: 10px;
+      color: white;
+  }
+
+  h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      padding-left: 25px;
+      color: white;
+  }
+
+  h2.handhelds {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+}
+
+
+    img.EMC-logo {
+      position: absolute;
+      bottom: 20px; /* Afstand vanaf de onderkant van het viewport */
+      left: 490px; /* Afstand vanaf de rechterkant van het viewport */
+      width: 225px;
+  }
+
+    img.handhelds_clarius_C3 {
+      position: absolute;
+      top: 115px;
+      left: 45px;
+      width: 200px;
+    }
+
+    .vl {
+      border-left: 3px solid black;
+      height: 315px;
+      position: absolute;
+      left: 25%;
+      top: 1%;
+    }
+
+    hr.h1 {
+      width: 24.5%;
+      margin-left: 1px;
+      height: 3px;
+      border: none;
+      background-color: black;
+      font-weight: bold;
+      margin-top: 235px;
+    }
+
